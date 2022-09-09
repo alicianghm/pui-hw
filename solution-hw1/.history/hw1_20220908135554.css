@@ -1,0 +1,220 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+  max-width: 300px;
+}
+
+h2,h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#nav:hover{ 
+  width: 200px;
+  margin: 0 auto;
+}
+
+.productButton :hover{
+  background-color: yellow;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.cartButton :hover{
+  background-color: yellow;
+  text-align: center;
+  font-weight: 800;
+}
+
+#container{
+  width: 300px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#title{
+  font-size: 32px;
+}
+.inventory{
+  display: block;
+  margin: 0 auto;
+  width: 302px;
+  padding: 2px;
+}
+
+.inventory:hover{
+  background-color: yellow;
+  margin: 0 auto;
+  padding: 2px;
+  font-style: bold;
+}
+
+#itempic{
+  width: 300px;
+  margin: 0px auto 0px auto;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.item{
+  text-decoration: underline;
+  font-size: 26px;
+  text-align: left;
+  line-height: auto;
+}
+
+.price :hover{
+  font-style: 300;
+}
+
+.price{
+  font-size: 28px;
+  text-align: left;
+  line-height: 10pt;
+}
+
+#selectedButton{
+  background-color: yellow;
+  font-weight: 800;
+  margin: 0 auto;
+  width: 200px;
+
+}
+
+.itemTitle{
+  font-size: 26px;
+  padding-top: 50px;
+}
+
+.itemPage-detail{
+  width: 500px;
+  border-radius: 2px;
+  border-style: solid;
+  margin: 0 auto;
+  display: block;
+}
+
+.description{
+  width: 300px;
+  margin: 0 auto;
+  font-size: 21px;
+  text-align: left;
+}
+
+.dropButton{
+  color: red;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  font-size: 16px;
+  padding: 10px 50px 10px 5px;
+}
+
+.dropdown-detail{
+  font-size: 16pt;
+}
+
+.glazing{
+  font-size: 16pt;
+  padding: 5px;
+}
+
+p.dropdownTitle{
+  font-size: 16pt;
+  padding-bottom: 10px;
+  padding-top: 30px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.dropdownOptions{
+  font-size: 16pt;
+  width: 300px;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+.totalPrice p{
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  padding: 40px;
+  align-content: right;
+}
+.cart{
+  width: 500px;
+  align-items: right;
+
+}
+.detail-cart{
+  padding: 10px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.addCart{
+  background-color: yellow;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.itemPage-cart{
+  width: 100px;
+  border: 4px;
+  border-style: solid;
+  border-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+.description-cart,p{
+  font-size: 16pt;
+  text-align: center;
+  line-height: 26px;
+}
+
+.remove{
+  margin: 0 auto;
+  display: block;
+  border: none;
+  background-color: white;
+  font-weight: 800;
+}
+
+.checkout-bt{
+  background-color: yellow;
+  font-size: 16px;
+  padding: 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  margin: 0 auto;
+  display: block;
+  width: 150px;
+  font-size: 18px;
+  font-weight:bold;
+}
+
+.checkout{
+  align-items: right;
+  padding-top: 50px;
+}
+
+.checkout span{
+
+}

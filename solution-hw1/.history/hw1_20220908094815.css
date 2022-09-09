@@ -1,0 +1,116 @@
+#logo{
+  max-width: 300px;
+}
+
+h2,h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#nav:hover{ 
+  width: 200px;
+  margin: 0 auto;
+}
+
+.productButton :hover{
+  background-color: yellow;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.cartButton :hover{
+  background-color: yellow;
+  text-align: center;
+  font-weight: 800;
+}
+
+#container{
+  width: 300px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+#title{
+  font-size: 32px;
+}
+.inventory{
+  display: block;
+  margin: 0 auto;
+  width: 302px;
+  padding: 2px;
+}
+.inventory:hover{
+  background-color: yellow;
+  margin: 0 auto;
+  padding: 2px;
+}
+
+#itempic{
+  width: 300px;
+  margin: 0px auto 0px auto;
+  border-radius: 2px;
+  border-style: solid;
+}
+.item{
+  text-decoration: underline;
+  font-size: 26px;
+  text-align: left;
+  line-height: auto;
+}
+
+.price{
+  font-size: 28px;
+  text-align: left;
+  line-height: 10pt;
+}
+
+#selectedButton{
+  background-color: yellow;
+  font-weight: 800;
+  margin: 0 auto;
+  width: 200px;
+
+}
+
+.itemTitle{
+  font-size: 26px;
+}
+
+#itemPage{
+  width: 500px;
+  border-radius: 2px;
+  border-style: solid;
+  margin: 0 auto;
+  display: block;
+}
+
+.description{
+  width: 300px;
+  margin: 0 auto;
+  font-size: 18px;
+  text-align: left;
+}
+
+.dropButton{
+  color: red;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  font-size: 16px;
+  padding: 10px 50px 10px 5px;
+}
+
+.dropdown-detail{
+  font-size: 20pt;
+  border: 5px;
+}
