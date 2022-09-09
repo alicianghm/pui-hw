@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
-  <meta name="author" content="Alicia Ng">
   <title>Bun Bun Bake Shop</title>
   <link href="hw1.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-  <h1 id="logo"><img src="./Assets/logo-01.svg"></h1>
+  <h1 class="logo"><a href="index.html"><img src="./Assets/logo-01.svg" /></a></h1>
   <hr size="3" color="black">
-  <div id="nav">
-    <h2 id="selectedButton">PRODUCTS</h2>
+  <div class="nav">
+    <div class="productButton">
+      <h2><a href="index.html">PRODUCTS</a></h2>
+    </div>
     <div class="cartButton">
-      <h3>CART</h3>
+      <h3><a href="HW1-Cart.html">CART</a></h3>
     </div>
   </div>
-  <div>
-    <p class="itemTitle"> Original cinnamon roll</p>
-    <img src="./Assets/original-cinnamon-roll.jpeg" class="itemPage-detail">
-    <br>
-    <div id="container">
-      <p class="description"> Customise our delicious hand-made cinnamon roll to your liking</p>
-      <p class="dropdownTitle">Glazing:</label>
-      <div class="options">
-        <select class="dropdownOptions">
-          <option value="Keep original">Keep original</option>
-          <option value="Sugar milk">Sugar milk</option>
-          <option value="Vanilla milk">Vanilla milk</option>
-          <option value="Double chocolate">Double chocolate</option>
-        </select>
-      </div>
-      <p class="dropdownTitle">Pack size:</label>
-      <div class="options">
-        <select class="dropdownOptions">
-          <option value="1">1</option>
-          <option value="3">3</option>
-          <option value="6">6</option>
-          <option value="12">12</option>
-        </select>
-      </div>
-      <div class="checkout">
-        <p>$2.49</p>
-        <button class="addCart">Add to Cart</button>
-      </div>
+  <p class="itemTitle"> Original cinnamon roll</p>
+  <img src="./Assets/original-cinnamon-roll.jpeg" class="itemPage-detail">
+  <br>
+  <div class="container">
+    <p class="description"> Customise our delicious hand-made cinnamon roll to your liking</p>
+    <p class="dropdownTitle">Glazing:</label>
+    <div class="options">
+      <select class="dropdownOptions">
+        <option value="Keep original">Keep original</option>
+        <option value="Sugar milk">Sugar milk</option>
+        <option value="Vanilla milk">Vanilla milk</option>
+        <option value="Double chocolate">Double chocolate</option>
+      </select>
+    </div>
+    <p class="dropdownTitle">Pack size:</label>
+    <div class="options">
+      <select class="dropdownOptions">
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="6">6</option>
+        <option value="12">12</option>
+      </select>
+    </div>
+    <div class="checkout">
+      <p>$2.49</p>
+      <button class="addCart">Add to Cart</button>
     </div>
   </div>
   </div>

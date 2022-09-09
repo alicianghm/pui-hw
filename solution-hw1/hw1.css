@@ -2,7 +2,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#logo {
+.logo {
   max-width: 300px;
 }
 
@@ -18,7 +18,7 @@ a {
   color: black;
 }
 
-#nav:hover {
+.nav:hover {
   width: 200px;
   margin: 0 auto;
 }
@@ -35,7 +35,7 @@ a {
   font-weight: 800;
 }
 
-#container {
+.container {
   width: 300px;
   margin: 0 auto;
 }
@@ -45,8 +45,9 @@ p {
   text-align: center;
 }
 
-#title {
+.title {
   font-size: 32px;
+  padding-top: 30px;
 }
 
 .inventory {
@@ -58,12 +59,10 @@ p {
 
 .inventory:hover {
   background-color: yellow;
-  /* margin: 0 auto; */
 }
 
-#itempic {
+.itempic {
   width: 300px;
-  /* margin: 0px auto 0px auto; */
   border-radius: 2px;
   border-style: solid;
 }
@@ -85,7 +84,7 @@ p {
   line-height: 10pt;
 }
 
-#selectedButton {
+.selectedButton {
   background-color: yellow;
   font-weight: 800;
   margin: 0 auto;
@@ -169,8 +168,13 @@ p.dropdownTitle {
 
 .addCart {
   background-color: yellow;
-  font-size: 16px;
+  font-size: 18px;
   padding: 10px;
+  font-weight: 800;
+  padding: 10px 20px 10px 20px;
+}
+
+.checkout p {
   font-weight: bold;
 }
 
@@ -221,4 +225,8 @@ p {
   justify-content: right;
   align-items: center;
   padding-top: 50px;
+}
+
+.description-cart hr {
+  width: 500px;
 }
