@@ -75,6 +75,15 @@ p {
   padding: 10px 20px 10px 20px;
 }
 
+.itemPage-cart {
+  width: 100px;
+  border: 4px;
+  border-style: solid;
+  border-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
 .remove {
   margin: 0 auto;
   display: block;
