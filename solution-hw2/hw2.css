@@ -72,11 +72,6 @@ body {
     align-content: right;
   }
   
-  .cart {
-    width: 500px;
-    align-items: right;
-  }
-  
   .addCart {
     background-color: yellow;
     font-size: 18px;
