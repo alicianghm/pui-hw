@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bun Bun Bake Shop</title>
+    <link href="hw3.css" rel="stylesheet" type="text/css" />
+    <script src="hw3.js"></script>
+  </head>
+  <body>
+    <div class="container-navi">
+      <div class="logoBox">
+        <h1 class="logo">
+          <a href="index.html"><img src="./Assets/logo-01.svg" /></a>
+        </h1>
+      </div>
+      <div class="navigation">
+        <div class="container-navButton">
+          <h2 class="navi-button"><a href="index.html" class="selected-button">PRODUCTS</a></h2>
+          <h2 class="navi-button"><a href="HW3-Cart.html">CART</a></h2>
+        </div>
+
+        <div class="navi-line">
+          <hr size="5" color="black" />
+        </div>
+
+        <div class="navi-description">
+          <h3>Original Cinnamon Roll</h3>
+        </div>
+      </div>
+    </div>
+    <div class="container-details">
+      <img src="./Assets/original-cinnamon-roll.jpeg" class="itemPage-detail" />
+      <div class="dropMenu">
+        <p class="detail-description"> Customise our delicious hand-made cinnamon roll to your liking</p>
+        <p class="dropdownTitle">Glazing:</label>
+          <select class="glaze-dropdownOptions" id="glazingOptions"
+          onchange="updatePrice()">
+            <option value="1" >Keep original</option>
+            <option value="2">Sugar milk</option>
+            <option value="3">Vanilla milk</option>
+            <option value="4">Double chocolate</option>
+          </select>
+        <p class="dropdownTitle">Pack size:</label>
+          <select class="pack-dropdownOptions" id="packOptions"
+          onchange="updatePrice()">
+            <option value="1">1</option>
+            <option value="2">3</option>
+            <option value="3">6</option>
+            <option value="4">12</option>
+          </select>
+        <div class="checkout">
+          <p id="totalPrice">$2.49</p>
+          <button class="addCart">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
