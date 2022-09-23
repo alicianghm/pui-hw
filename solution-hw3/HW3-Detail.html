@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Bun Bun Bake Shop</title>
     <link href="hw3.css" rel="stylesheet" type="text/css" />
-    <script src="hw3.js"></script>
+    <script  src="hw3.js" defer></script>
   </head>
   <body>
     <div class="container-navi">
@@ -35,18 +35,10 @@
         <p class="dropdownTitle">Glazing:</label>
           <select class="glaze-dropdownOptions" id="glazingOptions"
           onchange="updatePrice()">
-            <option value="1" >Keep original (+ $0.00)</option>
-            <option value="2">Sugar milk (+ $0.00)</option>
-            <option value="3">Vanilla milk (+ $0.50)</option>
-            <option value="4">Double chocolate (+ $1.50)</option>
           </select>
         <p class="dropdownTitle">Pack size:</label>
           <select class="pack-dropdownOptions" id="packOptions"
           onchange="updatePrice()">
-            <option value="1">1</option>
-            <option value="2">3</option>
-            <option value="3">6</option>
-            <option value="4">12</option>
           </select>
         <div class="checkout">
           <p id="totalPrice">$2.49</p>
