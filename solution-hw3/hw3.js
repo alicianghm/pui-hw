@@ -1,73 +1,63 @@
-// class roll {
-//   type;
-//   price;
-
-//   constructor(type, price) {
-//     this.type = type;
-//     this.price = price;
-//   }
-// }
-
-// const oriRoll = new roll("originalCinnamon", 2.49);
-// const glazer = [0.0, 0.0, 0.5, 1.5];
-// const pack = [1.0, 3.0, 5.0, 10.0];
-
 class Glaze {
-  constructor(name, price) {
+  constructor(name) {
     this.name = name;
-    this.price = price;
   }
 }
+//Declare objects of Glaze
+const originalCinnamon = new Glaze("Original Cinnamon");
+const sugarMilk = new Glaze("Sugar Milk");
+const vanillaMilk = new Glaze("Vanilla Milk");
+const doubleChocolate = new Glaze("Double Chocolate");
 
-const originalCinnamon = new Glaze("Original Cinnamon", 0.0);
-const sugarMilk = new Glaze("Sugar Milk", 0.0);
-const vanillaMilk = new Glaze("Vanilla Milk", 0.5);
-const doubleChocolate = new Glaze("Double Chocolate", 1.5);
+//Array of Glazing
+const glazeL = [originalCinnamon, sugarMilk, vanillaMilk, doubleChocolate];
+
+//Create option tag using array of Glaze
+let glazingOption = document.getElementById("glazingOptions");
+for (i = 0; i < glazeL.length; i++) {
+  let glazeSelect = document.createElement("option");
+  glazeSelect.textContent = glazeL[i].name;
+  glazingOption.appendChild(glazeSelect);
+}
 
 class Pack {
-  constructor(name, price) {
+  constructor(name) {
     this.name = name;
-    this.price = price;
   }
 }
-const packOne = new Pack("1", 1);
-const packThree = new Pack("3", 3);
-const packSix = new Pack("6", 5);
-const packTwelve = new Pack("12", 10);
+//Declare objects of Pack Qty
+const qty1 = new Pack("1");
+const qty3 = new Pack("3");
+const qty6 = new Pack("6");
+const qty12 = new Pack("12");
 
-let glazeArr = [originalCinnamon, sugarMilk, vanillaMilk, doubleChocolate];
-let packArr = [packOne, packThree, packSix, packTwelve];
+//Array of Pack Qty
+const packL = [qty1, qty3, qty6, qty12];
 
-let glazingOption = document.getElementById("glazingOptions");
-for (i = 0; i < glazeArr.length; i++) {
-  let glazeElement = document.createElement("option");
-  glazeElement.textContent = glazeArr[i].name;
-  glazingOption.appendChild(glazeElement);
-}
-
+//Create option tag using array of Pack Qty
 let packOption = document.getElementById("packOptions");
-for (i = 0; i < glazeArr.length; i++) {
-  let packElement = document.createElement("option");
-  packElement.textContent = packArr[i].name;
-  packOption.appendChild(packElement);
+for (i = 0; i < packL.length; i++) {
+  let packSelect = document.createElement("option");
+  packSelect.textContent = packL[i].name;
+  packOption.appendChild(packSelect);
 }
 
-// function updatePrice() {
-//   glazeSelect = document.getElementById("glazingOptions");
-//   packSelect = document.getElementById("packOptions");
-
-//   totalPrice = ((2.49 + glazePrice) * packPrice).toFixed(2);
-//   document.getElementById("totalPrice").innerHTML = "$" + totalPrice.toFixed(2);
-// }
-
-function updatePrice(element) {
+//Connect value using new array and index of item
+function updatePrice() {
   let basePrice = 2.49;
 
-  const glazeFinal = element.value;
+  const glazeVal = [0.0, 0.0, 0.5, 1.5];
+  const packVal = [1, 3, 5, 10];
 
-  let packItem = document.getElementsByClassName("pack-dropdownOptions")[0];
-  let packPrice = packItem.options;
+  let packOption = document.getElementsByClassName("pack-dropdownOptions")[0];
+  let packIndex = packOption.selectedIndex;
 
-  totalPrice = ((basePrice + glazePrice) * packPrice).toFixed(2);
-  document.getElementById("totalPrice").innerHTML = "$" + totalPrice.toFixed(2);
+  let glazeOption = document.getElementsByClassName("glaze-dropdownOptions")[0];
+  let glazeIndex = glazeOption.selectedIndex;
+
+  totalPrice = (
+    (basePrice + glazeVal[glazeIndex]) *
+    packVal[packIndex]
+  ).toFixed(2);
+  document.getElementById("totalPrice").innerHTML = "$" + totalPrice;
 }
