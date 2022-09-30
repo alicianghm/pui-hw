@@ -1,0 +1,303 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav:hover {
+  width: 200px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.itempic {
+  width: 300px;
+  border-radius: 2px;
+  border-style: solid;
+}
+
+.item {
+  text-decoration: underline;
+  font-size: 26px;
+  text-align: left;
+  line-height: auto;
+}
+
+.item:hover {
+  font-weight: 800;
+}
+
+.price {
+  font-size: 28px;
+  text-align: left;
+  line-height: 10pt;
+}
+
+.itemTitle {
+  font-size: 26px;
+  padding-top: 50px;
+}
+
+.dropButton {
+  color: red;
+  background-color: white;
+  border: black;
+  border-style: solid;
+  font-size: 16px;
+  padding: 10px 50px 10px 5px;
+}
+
+.dropdown-detail {
+  font-size: 16pt;
+}
+
+.glazing {
+  font-size: 16pt;
+  padding: 5px;
+}
+
+.totalPrice p {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: left;
+  float: left;
+  padding: 40px;
+  align-content: right;
+}
+
+.addCart {
+  background-color: yellow;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 800;
+  padding: 10px 20px 10px 20px;
+}
+
+.remove {
+  margin: 0 auto;
+  display: block;
+  border: none;
+  background-color: white;
+  font-weight: 800;
+}
+
+/* General  */
+.container-navi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h2,
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* Navigation bar */
+.logoBox {
+  width: 300px;
+}
+
+.logo {
+  max-width: 300px;
+}
+
+.navigation {
+  width: 60%;
+}
+
+.container-navButton {
+  display: flex;
+  justify-content: flex-end;
+}
+.container-navButton :hover {
+  background-color: yellow;
+  text-align: center;
+  font-weight: 800;
+}
+.navi-button {
+  margin: 40px;
+}
+
+.selectedButton {
+  background-color: yellow;
+  font-weight: 800;
+  margin: 0 auto;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.navi-description > h3 {
+  text-align: left;
+  font-size: 24pt;
+  padding: 30px;
+}
+
+.navi-line {
+  padding: 30px;
+}
+
+/* Gallery */
+
+.selected-button {
+  background-color: yellow;
+  vertical-align: middle;
+  font-weight: 800;
+}
+
+.container-gallery {
+  display: flex;
+  justify-content: center;
+}
+
+.inventory {
+  display: block;
+  margin: 20px;
+  width: 300px;
+  padding: 10px;
+}
+
+.inventory:hover {
+  background-color: yellow;
+}
+
+/* Details */
+.container-details {
+  display: flex;
+  justify-content: center;
+}
+
+.detail-description {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 21px;
+  text-align: left;
+}
+
+.itemPage-detail {
+  width: 500px;
+  border-radius: 2px;
+  border-style: solid;
+  margin-right: 50px;
+  display: block;
+}
+
+/* Details- Drop menu */
+
+.dropMenu {
+  width: 300px;
+  margin: 0;
+}
+
+p.dropdownTitle {
+  font-size: 16pt;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  margin: 0;
+  text-align: left;
+}
+
+.glaze-dropdownOptions,
+.pack-dropdownOptions {
+  font-size: 16pt;
+  width: 300px;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  padding: 10px;
+}
+
+.checkout {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.checkout p {
+  font-weight: bold;
+  padding-right: 20px;
+}
+
+/* Shopping Cart */
+
+.container-cart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail-cart {
+  margin: 20px;
+}
+
+.description-cart > p {
+  font-size: 18pt;
+  text-align: left;
+  width: 350px;
+}
+
+.description-cart hr {
+  width: 500px;
+}
+
+.price-cart {
+  width: 200px;
+}
+
+.price-cart > h3 {
+  font-size: 21px;
+  text-align: right;
+  padding-right: 50px;
+}
+
+.itemPage-cart {
+  width: 100px;
+  border: 4px;
+  border-style: solid;
+  border-color: black;
+  display: block;
+  margin: 0 auto;
+}
+
+.total-cart > p {
+  text-align: left;
+  font-size: 18pt;
+}
+
+.container-width {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.container-total {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container-checkout-bt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.checkout-bt {
+  background-color: yellow;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+  border: 3px;
+  border-style: solid;
+  border-color: black;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+}
