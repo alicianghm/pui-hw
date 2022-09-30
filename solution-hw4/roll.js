@@ -17,10 +17,10 @@ class Roll {
 let cart = [];
 
 //Declare objects of Glaze
-const originalCinnamon = new Glaze("Original Cinnamon");
-const sugarMilk = new Glaze("Sugar Milk");
-const vanillaMilk = new Glaze("Vanilla Milk");
-const doubleChocolate = new Glaze("Double Chocolate");
+const originalCinnamon = new Glaze("Original Cinnamon", 0.0);
+const sugarMilk = new Glaze("Sugar Milk", 0.0);
+const vanillaMilk = new Glaze("Vanilla Milk", 0.5);
+const doubleChocolate = new Glaze("Double Chocolate", 1.5);
 
 //Array of Glazing
 const glazeL = [originalCinnamon, sugarMilk, vanillaMilk, doubleChocolate];
@@ -41,8 +41,8 @@ class Pack {
 //Declare objects of Pack Qty
 const qty1 = new Pack("1");
 const qty3 = new Pack("3");
-const qty6 = new Pack("6");
-const qty12 = new Pack("12");
+const qty6 = new Pack("5");
+const qty12 = new Pack("10");
 
 //Array of Pack Qty
 const packL = [qty1, qty3, qty6, qty12];
@@ -71,8 +71,10 @@ function addToCart() {
     .selectedIndex;
   let glazeIndex = document.getElementsByClassName("glaze-dropdownOptions")[0]
     .selectedIndex;
+  let glazeOutput = glazeL[glazeIndex].name;
+  let packOutput = packL[packIndex].name;
   //test
-  let roll = new Roll(rollType, glazeIndex, packIndex, basePrice);
+  let roll = new Roll(rollType, glazeOutput, packOutput, basePrice);
   cart.push(roll);
   console.log(cart);
 }
@@ -82,9 +84,6 @@ function addToCart() {
 function updatePrice() {
   let basePrice = rolls[rollType].basePrice;
 
-  const glazeVal = [0.0, 0.0, 0.5, 1.5];
-  const packVal = [1, 3, 5, 10];
-
   let packOption = document.getElementsByClassName("pack-dropdownOptions")[0];
   let packIndex = packOption.selectedIndex;
 
@@ -92,8 +91,8 @@ function updatePrice() {
   let glazeIndex = glazeOption.selectedIndex;
 
   totalPrice = (
-    (basePrice + glazeVal[glazeIndex]) *
-    packVal[packIndex]
+    (basePrice + glazeL[glazeIndex].price) *
+    packL[packIndex].name
   ).toFixed(2);
   document.getElementById("totalPrice", "cart-totalPrice").innerHTML =
     "$" + totalPrice;
