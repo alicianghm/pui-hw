@@ -1,3 +1,4 @@
+//HW5 START
 class Glaze {
   constructor(name, price) {
     this.name = name;
@@ -5,15 +6,8 @@ class Glaze {
   }
 }
 
-const name = {
-  "Original Cinnamon Roll": "Original Cinnamon Roll",
-  "Sugar Milk": "Sugar Milk",
-  "Vanilla Milk": "Vanilla Milk",
-  "Double Chocolate": "Double Chocolate",
-};
-
 const glaze = {
-  "Original Cinnamon": 0,
+  Original: 0,
   "Sugar Milk": 0,
   "Vanilla Milk": 0.5,
   "Double Chocolate": 1.5,
@@ -36,7 +30,7 @@ class Roll {
     this.element = null;
   }
 }
-
+//Create new set and object with new Roll. Add roll to set
 const rollSet = new Set();
 
 function createRoll(rollType, rollGlazing, packSize, basePrice) {
@@ -45,7 +39,7 @@ function createRoll(rollType, rollGlazing, packSize, basePrice) {
 
   return roll;
 }
-
+//Create template and remove item
 function createElement(roll) {
   const template = document.querySelector("#roll-template");
   const clone = template.content.cloneNode(true);
@@ -63,6 +57,7 @@ function createElement(roll) {
   updateElement(roll);
 }
 
+//Select id and update price of each item
 function updateElement(roll) {
   console.log(roll);
   const rollCartImg = roll.element.querySelector(".rollCartImg");
@@ -84,12 +79,14 @@ function updateElement(roll) {
   rollCartImg.src = rolls[roll.type].imageFile;
 }
 
+//Delete roll and update price
 function deleteRoll(roll) {
   roll.element.remove();
   rollSet.delete(roll);
   updatePrice();
 }
 
+//Tabulate total price
 function updatePrice() {
   let itemTotal = 0;
   for (const roll of rollSet) {
@@ -111,12 +108,7 @@ function updatePrice() {
   finalTotal.innerText = itemTotal.toFixed(2);
 }
 
-const roll1 = createRoll(
-  "Apple",
-  "Original Cinnamon",
-  "3",
-  rolls["Apple"]["basePrice"]
-);
+const roll1 = createRoll("Apple", "Original", "3", rolls["Apple"]["basePrice"]);
 
 const roll2 = createRoll(
   "Raisin",
