@@ -5,6 +5,13 @@ class Glaze {
   }
 }
 
+const name = {
+  "Original Cinnamon Roll": "Original Cinnamon Roll",
+  "Sugar Milk": "Sugar Milk",
+  "Vanilla Milk": "Vanilla Milk",
+  "Double Chocolate": "Double Chocolate",
+};
+
 const glaze = {
   "Original Cinnamon": 0,
   "Sugar Milk": 0,
@@ -70,9 +77,9 @@ function updateElement(roll) {
   const totalPriceCart2 = roll.element.querySelector(".price-cart");
   console.log(totalPriceCart);
 
-  rollCartTitle.innerText = roll.type;
-  rollCartGlaze.innerText = roll.glazing;
-  rollCartPack.innerText = roll.size;
+  rollCartTitle.innerText = [roll.type] + " Cinnamon roll";
+  rollCartGlaze.innerText = "Glazing: " + roll.glazing;
+  rollCartPack.innerText = "Pack Size: " + roll.size;
   totalPriceCart2.innerText = totalPriceCart;
   rollCartImg.src = rolls[roll.type].imageFile;
 }
