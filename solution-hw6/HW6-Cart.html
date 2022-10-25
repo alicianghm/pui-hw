@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bun Bun Bake Shop</title>
+    <link href="hw6.css" rel="stylesheet" type="text/css" />
+    <script src="rollsData.js" defer></script>
+    <script src="cart.js" defer></script>
+  </head>
+  <body>
+    <div class="container-navi">
+      <div class="logoBox">
+        <h1 class="logo">
+          <a href="index.html"><img src="./Assets/logo-01.svg"/></a>
+        </h1>
+      </div>
+      <div class="navigation">
+        <div class="container-navButton">
+          <h2 class="navi-button"><a href="index.html">PRODUCTS</a></h2>
+          <h2 class="navi-button">
+            <a href="HW6-Cart.html" class="selected-button">CART</a>
+          </h2>
+        </div>
+
+        <div class="navi-line">
+          <hr size="5" color="black" />
+        </div>
+
+        <div class="navi-description">
+          <h3>Shopping Cart</h3>
+        </div>
+
+      <div id="cart-list">
+ 
+        <div class="container-cart-main" >
+          <template id="roll-template">
+        <div class="container-cart">
+          <div class="detail-cart">
+            <img
+              src="./Assets/double-chocolate-cinnamon-roll.jpeg"
+              class="rollCartImg"
+            />
+            <button class="remove">Remove</button>
+          </div>
+
+          <div class="description-cart" >
+            <p class="rollCartTitle">Double chocolate Cinnamon</p>
+            <p class="rollCartGlaze">Glazing: Keep original</p>
+            <p class="rollCartPack">Pack Size: 1</p>
+          </div>
+          <div class="price-cart">
+            <h3>$2.49</h3>
+          </div>
+        </div>
+      </template>
+    </div>
+
+        <hr size="5" color="black" />
+        <div class="container-total">
+          <div class="container-width">
+            <div class="total-cart">
+              <p>Total:</p>
+            </div>
+            <div class="total-cart">
+              <p id="cart-totalPrice">$0.00</p>  
+          </div>
+          </div>
+        </div>
+        <div class="container-checkout-bt">
+          <button class="checkout-bt">Checkout</button>
+        </div>
+      </div>
+      </div>
+  </body>
+</html>
