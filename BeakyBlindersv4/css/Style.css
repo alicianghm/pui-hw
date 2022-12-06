@@ -163,15 +163,13 @@ body {
   }
 }
 
-
-
 /*scrollie*/
 .billboard {
   margin-top: 20px;
   width: 100%;
   height: 700px;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../Pics/background.jpg") no-repeat;
+    url("../assets/background.jpg") no-repeat;
   text-align: center;
   position: relative;
   overflow: hidden;
